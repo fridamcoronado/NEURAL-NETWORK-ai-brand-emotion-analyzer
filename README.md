@@ -5,7 +5,7 @@ A computer vision system that classifies the dominant **brand attribute** commun
 Instead of detecting objects or basic emotions, this model reads marketing positioning from composition, color palette, lighting, and photographic style — the same signals a creative director reads when they look at an ad.
 
 
-![Demo screenshot](assets/Captura de pantalla 2026-08-11 164339.png)
+![Demo screenshot](https://github.com/fridamcoronado/NEURAL-NETWORK-ai-brand-emotion-analyzer/blob/main/Captura%20de%20pantalla%202026-08-11%20164339.png)
 
 ---
 
@@ -26,7 +26,7 @@ Instead of detecting objects or basic emotions, this model reads marketing posit
 
 Evaluated on a held-out test set of 299 images, never seen during training.
 
-![Training curves](https://github.com/fridamcoronado/NEURAL-NETWORK-ai-brand-emotion-analyzer/blob/main/Captura%20de%20pantalla%202026-08-11%20164339.png)
+![Training curves]
 
 ---
 
