@@ -51,9 +51,21 @@ image  →  preprocessing  →  EfficientNetB0 (CNN)  →  predict()  →  Gradi
 
 With only ~500 images per class, training a CNN from scratch doesn't provide enough examples to learn low-level features (edges, textures, color) reliably. Transfer learning reuses ImageNet-pretrained representations and only adapts the final layers — EfficientNetB0 gives a strong accuracy-to-size trade-off (~5M parameters) compared to heavier backbones like ResNet50, with lower overfitting risk on a small dataset.
 
+## Full technical documentation
+
+Every step below is documented with the complete, real code used in this project (not simplified snippets):
+
+- **[1. Data Preparation](docs/01_data_preparation.md)** — unpacking the dataset, class balance check, stratified split, augmentation pipeline, `Dataset`/`DataLoader`.
+- **[2. Model Architecture & Training](docs/02_model_training.md)** — `build_model()`, the two-phase training loop, and test-set evaluation.
+- **[3. Loading Saved Weights & the Gradio Demo](docs/03_inference_and_demo.md)** — how the separate inference notebook reloads the trained model without retraining, plus the full Gradio app code.
+
 ## Project structure
 
 ```
+docs/
+  01_data_preparation.md       # full code: data loading, split, augmentation
+  02_model_training.md         # full code: architecture, 2-phase training, evaluation
+  03_inference_and_demo.md     # full code: loading weights, predict(), Gradio app
 notebooks/
   01_training_pipeline.ipynb   # data prep, augmentation, 2-phase training, evaluation
   02_inference_demo.ipynb      # loads saved weights only — no training, runs in seconds
