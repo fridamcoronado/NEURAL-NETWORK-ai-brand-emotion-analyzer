@@ -87,7 +87,7 @@ pip install -r requirements.txt
 - "Luxury" or "Trust" are marketing concepts, not objective labels — the labeling criteria should be documented and ideally reviewed by more than one annotator.
 - The model may partly learn the visual style of the specific brands in the dataset rather than the attribute in the abstract — a natural next step is testing on ads from brands not seen during training.
 - Planned: confusion matrix + qualitative review of misclassified examples to guide a targeted improvement (Grad-CAM visualizations are a natural fit here).
-- Live demo not permanently hosted (free-tier hosting limits) — see notebooks/02_inference_demo.ipynb to run it yourself in ~30 seconds, or watch the screenshot above." Así controlas la narrativa en vez de dejar la duda.
+- Live demo not permanently hosted (free-tier hosting limits) — see notebooks/02_inference_demo.ipynb to run it yourself in ~30 seconds, or watch the screenshot above.
 
 ## Tech stack
 
